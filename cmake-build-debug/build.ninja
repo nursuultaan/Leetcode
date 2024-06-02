@@ -73,6 +73,39 @@ build Leetcode.exe: CXX_EXECUTABLE_LINKER__Leetcode_Debug CMakeFiles/Leetcode.di
   TARGET_IMPLIB = libLeetcode.dll.a
   TARGET_PDB = Leetcode.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target string_greatest_common_divisor
+
+
+#############################################
+# Order-only phony target for string_greatest_common_divisor
+
+build cmake_object_order_depends_target_string_greatest_common_divisor: phony || CMakeFiles/string_greatest_common_divisor.dir
+
+build CMakeFiles/string_greatest_common_divisor.dir/string_greatest_common_divisor.cpp.obj: CXX_COMPILER__string_greatest_common_divisor_unscanned_Debug C$:/Users/nursu/CLionProjects/Leetcode/string_greatest_common_divisor.cpp || cmake_object_order_depends_target_string_greatest_common_divisor
+  DEP_FILE = CMakeFiles\string_greatest_common_divisor.dir\string_greatest_common_divisor.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\string_greatest_common_divisor.dir
+  OBJECT_FILE_DIR = CMakeFiles\string_greatest_common_divisor.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target string_greatest_common_divisor
+
+
+#############################################
+# Link the executable string_greatest_common_divisor.exe
+
+build string_greatest_common_divisor.exe: CXX_EXECUTABLE_LINKER__string_greatest_common_divisor_Debug CMakeFiles/string_greatest_common_divisor.dir/string_greatest_common_divisor.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\string_greatest_common_divisor.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = string_greatest_common_divisor.exe
+  TARGET_IMPLIB = libstring_greatest_common_divisor.dll.a
+  TARGET_PDB = string_greatest_common_divisor.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -101,6 +134,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build Leetcode: phony Leetcode.exe
 
+build string_greatest_common_divisor: phony string_greatest_common_divisor.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -109,7 +144,7 @@ build Leetcode: phony Leetcode.exe
 #############################################
 # Folder: C:/Users/nursu/CLionProjects/Leetcode/cmake-build-debug
 
-build all: phony Leetcode.exe
+build all: phony Leetcode.exe string_greatest_common_divisor.exe
 
 # =============================================================================
 # Built-in targets

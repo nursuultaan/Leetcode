@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "Leetcode",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -41,6 +43,13 @@
 					"id" : "Leetcode::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Leetcode-Debug-8f5abb7d0e0610ae283a.json",
 					"name" : "Leetcode",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "string_greatest_common_divisor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-string_greatest_common_divisor-Debug-a57c0964766e46d77949.json",
+					"name" : "string_greatest_common_divisor",
 					"projectIndex" : 0
 				}
 			]

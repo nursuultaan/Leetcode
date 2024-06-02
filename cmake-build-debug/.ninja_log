@@ -1,0 +1,12 @@
+# ninja log v5
+9	365	7390036193380810	CMakeFiles/Leetcode.dir/main.cpp.obj	ec2a601935430fed
+3	293	7390036946579985	CMakeFiles/Leetcode.dir/merge_strings.cpp.obj	16f5cd12952e0db9
+2	101	7390037377656082	Leetcode.exe	2a0b7e0ab641c71a
+3	278	7390037595689582	CMakeFiles/Leetcode.dir/merge_strings.cpp.obj	16f5cd12952e0db9
+278	366	7390037596512895	Leetcode.exe	2a0b7e0ab641c71a
+3	291	7390038016693525	CMakeFiles/Leetcode.dir/merge_strings.cpp.obj	16f5cd12952e0db9
+292	389	7390038017634776	Leetcode.exe	2a0b7e0ab641c71a
+2	274	7390038587220320	CMakeFiles/Leetcode.dir/merge_strings.cpp.obj	16f5cd12952e0db9
+274	369	7390038588147015	Leetcode.exe	2a0b7e0ab641c71a
+3	271	7390038839402664	CMakeFiles/Leetcode.dir/merge_strings.cpp.obj	16f5cd12952e0db9
+272	363	7390038840306911	Leetcode.exe	2a0b7e0ab641c71a

@@ -4,37 +4,37 @@
 using namespace std;
 
 bool canPlaceFlowers(vector<int>& flowerbed, int n) {
+    int count = 0;
+    int size = flowerbed.size();
 
-    bool flower_warning = false;
-
-    for(int i = 0;i<flowerbed.size();i++){
-        if(flowerbed[i] == 1 && !flower_warning){
-            i+= n;
-            flower_warning = true;
+    for (int i = 0; i < size; ++i) {
+        if (flowerbed[i] == 0 &&
+            (i == 0 || flowerbed[i - 1] == 0) && // Check previous and current are 0
+            (i == size - 1 || flowerbed[i + 1] == 0)) { // Check current and next are 0
+            flowerbed[i] = 1; // Mark the current position as planted
+            ++count; // Increment count of flowers planted
         }
-        if(flower_warning){
-            for(int j = i;j<=i+n;j++){
-                if(flowerbed[j] == 1){
-                    return false;
-                }
-            }
-            flower_warning = false;
+        if (count >= n) { // If enough flowers are planted
+            return true;
         }
-
-
-
     }
-    return true;
-
-
+    return count >= n; // Return whether enough flowers are planted
 }
+
 
 
 int main(){
 
-    std::vector<int> v = {1,0,0,0,1};
-    int n = 1;
-    std::cout<<canPlaceFlowers(v,n);
+    //std::vector<int> v = {1,0,0,0,1}; // n =2  // false
+    //std::vector<int> v = {1,0,0,0,0,1}; // n=1 //true //
+
+    //std::vector<int> v = {1,0,0,0,0,1}; // false // n= 2
+
+//    std::vector<int> v ={1,0,0,0,1}; // n=1 //true
+
+    std::vector<int> v = {0,0,1,0,1} ; // n=1 //true
+    int n = 2;
+    std::cout<<(canPlaceFlowers(v,n) ? "true": "false");
 
 
 }

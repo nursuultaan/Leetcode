@@ -106,6 +106,39 @@ build string_greatest_common_divisor.exe: CXX_EXECUTABLE_LINKER__string_greatest
   TARGET_IMPLIB = libstring_greatest_common_divisor.dll.a
   TARGET_PDB = string_greatest_common_divisor.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target kids_with_kendies
+
+
+#############################################
+# Order-only phony target for kids_with_kendies
+
+build cmake_object_order_depends_target_kids_with_kendies: phony || CMakeFiles/kids_with_kendies.dir
+
+build CMakeFiles/kids_with_kendies.dir/kids_with_kendies.cpp.obj: CXX_COMPILER__kids_with_kendies_unscanned_Debug C$:/Users/nursu/CLionProjects/Leetcode/kids_with_kendies.cpp || cmake_object_order_depends_target_kids_with_kendies
+  DEP_FILE = CMakeFiles\kids_with_kendies.dir\kids_with_kendies.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\kids_with_kendies.dir
+  OBJECT_FILE_DIR = CMakeFiles\kids_with_kendies.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target kids_with_kendies
+
+
+#############################################
+# Link the executable kids_with_kendies.exe
+
+build kids_with_kendies.exe: CXX_EXECUTABLE_LINKER__kids_with_kendies_Debug CMakeFiles/kids_with_kendies.dir/kids_with_kendies.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\kids_with_kendies.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = kids_with_kendies.exe
+  TARGET_IMPLIB = libkids_with_kendies.dll.a
+  TARGET_PDB = kids_with_kendies.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -134,6 +167,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build Leetcode: phony Leetcode.exe
 
+build kids_with_kendies: phony kids_with_kendies.exe
+
 build string_greatest_common_divisor: phony string_greatest_common_divisor.exe
 
 # =============================================================================
@@ -144,7 +179,7 @@ build string_greatest_common_divisor: phony string_greatest_common_divisor.exe
 #############################################
 # Folder: C:/Users/nursu/CLionProjects/Leetcode/cmake-build-debug
 
-build all: phony Leetcode.exe string_greatest_common_divisor.exe
+build all: phony Leetcode.exe string_greatest_common_divisor.exe kids_with_kendies.exe
 
 # =============================================================================
 # Built-in targets

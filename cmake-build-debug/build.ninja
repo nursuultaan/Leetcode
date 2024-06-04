@@ -139,6 +139,39 @@ build kids_with_kendies.exe: CXX_EXECUTABLE_LINKER__kids_with_kendies_Debug CMak
   TARGET_IMPLIB = libkids_with_kendies.dll.a
   TARGET_PDB = kids_with_kendies.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target flowers_adjesent
+
+
+#############################################
+# Order-only phony target for flowers_adjesent
+
+build cmake_object_order_depends_target_flowers_adjesent: phony || CMakeFiles/flowers_adjesent.dir
+
+build CMakeFiles/flowers_adjesent.dir/flowers_adjesent.cpp.obj: CXX_COMPILER__flowers_adjesent_unscanned_Debug C$:/Users/nursu/CLionProjects/Leetcode/flowers_adjesent.cpp || cmake_object_order_depends_target_flowers_adjesent
+  DEP_FILE = CMakeFiles\flowers_adjesent.dir\flowers_adjesent.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\flowers_adjesent.dir
+  OBJECT_FILE_DIR = CMakeFiles\flowers_adjesent.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target flowers_adjesent
+
+
+#############################################
+# Link the executable flowers_adjesent.exe
+
+build flowers_adjesent.exe: CXX_EXECUTABLE_LINKER__flowers_adjesent_Debug CMakeFiles/flowers_adjesent.dir/flowers_adjesent.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\flowers_adjesent.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = flowers_adjesent.exe
+  TARGET_IMPLIB = libflowers_adjesent.dll.a
+  TARGET_PDB = flowers_adjesent.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -167,6 +200,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build Leetcode: phony Leetcode.exe
 
+build flowers_adjesent: phony flowers_adjesent.exe
+
 build kids_with_kendies: phony kids_with_kendies.exe
 
 build string_greatest_common_divisor: phony string_greatest_common_divisor.exe
@@ -179,7 +214,7 @@ build string_greatest_common_divisor: phony string_greatest_common_divisor.exe
 #############################################
 # Folder: C:/Users/nursu/CLionProjects/Leetcode/cmake-build-debug
 
-build all: phony Leetcode.exe string_greatest_common_divisor.exe kids_with_kendies.exe
+build all: phony Leetcode.exe string_greatest_common_divisor.exe kids_with_kendies.exe flowers_adjesent.exe
 
 # =============================================================================
 # Built-in targets

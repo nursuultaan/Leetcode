@@ -1,8 +1,8 @@
 # ninja log v5
 9	365	7390036193380810	CMakeFiles/Leetcode.dir/main.cpp.obj	ec2a601935430fed
 2	287	7390110232076907	CMakeFiles/string_greatest_common_divisor.dir/string_greatest_common_divisor.cpp.obj	7bf9a50a162f6bd7
+3	397	7391781744930350	CMakeFiles/kids_with_kendies.dir/kids_with_kendies.cpp.obj	8e67e2b354bd95e3
 3	271	7390038839402664	CMakeFiles/Leetcode.dir/merge_strings.cpp.obj	16f5cd12952e0db9
 272	363	7390038840306911	Leetcode.exe	2a0b7e0ab641c71a
 287	365	7390110232826166	string_greatest_common_divisor.exe	66c0b4b626c1c1d9
-1	592	7391780446132081	CMakeFiles/kids_with_kendies.dir/kids_with_kendies.cpp.obj	8e67e2b354bd95e3
-593	924	7391780449351150	kids_with_kendies.exe	7926096f6cb227d0
+397	490	7391781745840428	kids_with_kendies.exe	7926096f6cb227d0

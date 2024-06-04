@@ -11,10 +11,13 @@ vector<bool> kidsWithCandies(vector<int>& candies, int extraCandies) {
         }
     }
     std::cout<<max<<"\n";
+    std::vector<bool> res;
 
     for(int kid : candies){
+        res.push_back(kid + extraCandies >= max);
 
     }
+    return res;
 }
 
 
